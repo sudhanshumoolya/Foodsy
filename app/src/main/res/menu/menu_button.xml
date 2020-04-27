@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/shop"
+        android:title="Shop"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        app:cnb_iconColor="#fff"
+        app:cnb_backgroundColor="#ff785B"
+        app:cnb_textColor="#fff" />
+    <item
+        android:id="@+id/sell"
+        android:title="Sell"
+        android:icon="@drawable/ic_local_shipping_black_24dp"
+        app:cnb_iconColor="#fff"
+        app:cnb_backgroundColor="#ff785B"
+        app:cnb_textColor="#fff" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/abc_vector_test"
+        android:title="Account"
+        app:cnb_backgroundColor="#ff785B"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff" />
+
+</menu>
