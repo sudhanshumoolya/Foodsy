@@ -10,8 +10,6 @@
         android:id="@+id/sell_item_title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:text="Enter the details"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,29 +23,23 @@
         android:id="@+id/item_name_sec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/item_price_sec"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/sell_item_title_tv"
-        app:layout_constraintTop_toBottomOf="@+id/sell_item_title_tv"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintStart_toStartOf="@+id/sell_item_title_tv" />
 
     <EditText
         android:id="@+id/item_price_sec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="80dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/item_quantity_sec"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/item_name_sec"
-        app:layout_constraintTop_toBottomOf="@+id/sell_item_title_tv"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -78,12 +70,13 @@
         android:id="@+id/item_quantity_sec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/item_price_sec"
-        app:layout_constraintTop_toBottomOf="@+id/sell_item_title_tv"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintTop_toBottomOf="@+id/item_price_sec"
+        app:layout_constraintVertical_bias="0.104" />
 
     <Button
         android:id="@+id/add_item_button"
@@ -95,5 +88,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/item_quantity_sec"
         app:layout_constraintTop_toBottomOf="@+id/item_quantity_sec"
-        app:layout_constraintVertical_bias="0.254" />
+        app:layout_constraintVertical_bias="0.163" />
 </androidx.constraintlayout.widget.ConstraintLayout>

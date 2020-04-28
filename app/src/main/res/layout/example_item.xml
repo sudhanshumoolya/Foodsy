@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    android:elevation="@dimen/cardview_default_elevation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +18,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/raleway_medium"
             android:text="TextView"
+            android:textColor="@color/design_default_color_on_secondary"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,17 +30,41 @@
             android:id="@+id/item_quantity"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/eczar_medium"
             android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/item_name"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/item_name" />
 
         <TextView
             android:id="@+id/item_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/eczar_medium"
             android:text="TextView"
+            android:textColor="@color/design_default_color_on_secondary"
             app:layout_constraintStart_toStartOf="@+id/item_quantity"
             app:layout_constraintTop_toBottomOf="@+id/item_quantity" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Price : "
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toStartOf="@+id/item_quantity"
+            app:layout_constraintTop_toTopOf="@+id/item_price" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Quantity: "
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toStartOf="@+id/item_quantity"
+            app:layout_constraintTop_toTopOf="@+id/item_quantity" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

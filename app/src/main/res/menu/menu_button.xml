@@ -19,7 +19,7 @@
         app:cnb_textColor="#fff" />
     <item
         android:id="@+id/account"
-        android:icon="@drawable/abc_vector_test"
+        android:icon="@drawable/ic_account_circle_black_24dp"
         android:title="Account"
         app:cnb_backgroundColor="#ff785B"
         app:cnb_iconColor="#fff"
